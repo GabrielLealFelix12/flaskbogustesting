@@ -1,0 +1,86 @@
+{% extends "PageHome/Home.html" %}
+{% block PageTitle %}
+ Fish
+{% endblock %}
+
+{% block PageContent %}
+
+<div class="UpContent">
+<div class="Navbar">
+    <ul>
+      <li style="float:left">
+      <a class="Logo" href="#about"> Aquatuba 
+        <img src="static/images/ImgPageHome/fish.png" alt="fish_icon"> 
+      </a> 
+      </li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+<div class="TopPresentationContent">
+        <div>  <h1> This is my web {{content}} </h1> </div>
+        <div></div>
+</div>
+</div>
+ 
+ <div class="MiddleContent">
+  <div class="MiddlePresentationContent"> </div>
+  <div> 
+  </div>
+</div>
+ 
+ <div class="BottomContent">
+ </div>
+ 
+ <style>
+@font-face {
+  font-family: Bebas;
+  src: url(static/css/fonts/BebasNeue-Regular.woff2);
+}
+
+body {
+    font-family: Bebas;
+}
+
+.UpContent{
+    height: 75vh;
+    background-image: url("static/images/ImgPageHome/959558-final.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border-radius: 15px; 
+}
+
+.Navbar ul{
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Navbar li {
+  float: right;
+}
+
+.Navbar li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+  font-size:50px;
+}
+
+
+
+
+.Logo img {
+   max-width: 50px;
+   max-width: 50px;
+   filter:invert(100%) sepia(0%) saturate(0%) hue-rotate(213deg) brightness(112%) contrast(106%);
+}
+
+ </style>
+{% endblock %}
