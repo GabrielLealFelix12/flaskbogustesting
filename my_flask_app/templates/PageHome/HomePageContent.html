@@ -1,6 +1,6 @@
 {% extends "PageHome/Home.html" %}
 {% block PageTitle %}
- Fish
+ Fish {{content}}
 {% endblock %}
 
 {% block PageContent %}
@@ -19,18 +19,41 @@
     </ul>
   </div>
 <div class="TopPresentationContent">
-        <div>  <h1> This is my web {{content}} </h1> </div>
-        <div></div>
+        <div> Welcome to Aquatuba </div>
 </div>
 </div>
  
  <div class="MiddleContent">
-  <div class="MiddlePresentationContent"> </div>
-  <div> 
+  <div class="MiddlePresentationContent"> 
+    <img src="static/images/ImgPageHome/fishArt.jpg" alt="fish_icon">
   </div>
+  
+  <div>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante nibh, mollis quis tellus a, sollicitudin vulputate justo. Quisque leo arcu, imperdiet vitae augue eget, bibendum tincidunt sem. Nulla cursus molestie velit, non auctor ipsum. Pellentesque tortor nisl, lacinia quis lorem nec, sagittis dapibus erat. Nam vel  <span id="dots">...</span><span id="more"></span> libero et sapien tempor efficitur ac ac eros. In tempor pulvinar consectetur. Mauris vestibulum, neque vitae facilisis rhoncus, lorem leo eleifend velit, in efficitur velit mauris nec odio. Fusce congue sagittis nisl vitae euismod. Curabitur et pharetra urna, et tincidunt orci. Maecenas sed scelerisque augue, vel scelerisque lorem. Nulla aliquet ipsum vel ante tincidunt, ac dictum turpis pretium. Cras eu accumsan metus. Fusce eu libero velit. Proin luctus dolor sit amet imperdiet consectetur
+  </div>
+
 </div>
  
  <div class="BottomContent">
+  <div class="MainContentBottom">
+    <div class="MainContentBottom"> 
+      <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante nibh, mollis quis tellus a, sollicitudin vulputate justo. </div>
+      <div> <button> Ingressos </button> </div>
+    </div> 
+    
+    <div class="MainContentBottomInfo">
+     <div> +500 especies </div>
+     <div> +20 Profissionais qualificados </div>
+     <div> +10 exposições disponíveis </div>
+    </div>
+  
+  
+  </div>
+  
+  <div class="ImgBottomContent">
+     <img src="static/images/ImgPageHome/touringFishPlace.jpg" alt="fish_icon">
+  </div>
+
  </div>
  
  <style>
@@ -82,5 +105,80 @@ body {
    filter:invert(100%) sepia(0%) saturate(0%) hue-rotate(213deg) brightness(112%) contrast(106%);
 }
 
+.TopPresentationContent{
+  font-size:50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.TopPresentationContent div{
+  font-size:100px;
+  color: white;
+}
+
+.MiddleContent{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.MiddleContent img{
+  border-radius: 25px;
+}
+
+.MiddleContent div{
+
+  width: 720px;
+  height: 480px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size:50px;
+  color: #16c6e9;
+  text-shadow: 1px 1px 2px black;
+  overflow: hidden;
+}
+ 
+.BottomContent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.BottomContent div {
+
+  font-size: 25px;
+}
+
+
+.BottomContent img{
+  border-radius: 25px;
+  width: 452px;
+  height: 600px;
+}
+
+.MainContentBottom{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.MainContentBottomInfo{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ImgBottomContent{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
  </style>
 {% endblock %}
